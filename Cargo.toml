@@ -1,0 +1,11 @@
+[package]
+name = "result-ext"
+description = "Extends `Result` with additional operations"
+version = "0.0.0"
+authors = ["Simon Ochsenreither <simon@ochsenreither.de>"]
+categories = ["rust-patterns", "algorithms"]
+documentation = "https://docs.rs/result-ext/"
+repository = "https://github.com/soc/result-ext.git"
+homepage = "https://github.com/soc/result-ext"
+readme = "README.md"
+license = "MPL-2.0"
