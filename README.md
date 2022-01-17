@@ -25,7 +25,7 @@ Rust 1.0 or newer.
 Add the library as a dependency to your project by inserting
 
 ```toml
-result-ext = "0.0.0"
+result-ext = "0.1.0"
 ```
 
 into the `[dependencies]` section of your Cargo.toml file.
