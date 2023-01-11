@@ -14,4 +14,14 @@ impl<T, E> ResultExt<T, E> for Result<T, E> {
             Err(ref e) => f == e
         }
     }
+
+    #[inline]
+    fn map_or2<U, F: FnOnce(T) -> U>(self, f: F, default: U) -> U {
+        self.map_or(default, f)
+    }
+
+    #[inline]
+    fn map_or_else2<U, F: FnOnce(T) -> U, D: FnOnce(E) -> U>(self, f: F, default: D) -> U {
+        self.map_or_else(default, f)
+    }
 }
